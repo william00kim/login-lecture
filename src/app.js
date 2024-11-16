@@ -11,7 +11,7 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 //라우팅
-const home = require("./routes/home");
+const home = require("./src/home");
 
 app.use("/", home);
 
