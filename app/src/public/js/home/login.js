@@ -11,4 +11,10 @@ function login() {
     }
 
     console.log(req);
+    console.log(JSON.stringify(req));
+
+    fetch("/login", {
+        method: "POST",
+        body: JSON.stringify(req)
+    })
 }
